@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // adding it to the containermain_container
         transaction.add(R.id.main_container, new Homefragment()) ;    // this is the id of the frame layout
         transaction.commit() ;
-        getSupportActionBar().setTitle("Home Fragment");
+        getSupportActionBar().setTitle ("Home Fragment");
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                         // we have to check the item
                         item.setChecked(true) ;
+
+
+
                         break ;
 
 
