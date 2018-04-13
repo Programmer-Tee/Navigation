@@ -104,8 +104,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         item.setChecked(true) ;
                         break ;
 
-                }
 
+
+                }
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
@@ -146,24 +149,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
     }
 
+
+    // NOT USING
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+      return true;
 
 
 
-         if (id == R.id.nav_home) {
-
-        } else if (id == R.id.nav_message) {
-
-        } else if (id == R.id.nav_settings) {
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
