@@ -45,6 +45,7 @@ public class Fragment_Message extends Fragment {
     List <Messages> storedmessage; //the list will store the messages entered
 
 
+
     public Fragment_Message() {
 
 
